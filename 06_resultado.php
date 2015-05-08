@@ -1,4 +1,4 @@
-<?
+<?php
 //iniciamos sessiones
 session_start();
 
@@ -17,7 +17,7 @@ session_start();
 <form action="" method="post" class="niceform">
 <fieldset>
 <legend>05. Resultado Evaluacion</legend>
-<?
+<?php
 var_dump($_POST["semejanza"]);
 echo "Evaluando... <br>";
 

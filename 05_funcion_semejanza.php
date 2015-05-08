@@ -1,4 +1,4 @@
-<?
+<?php
 //iniciamos sessiones
 session_start();
 
@@ -20,7 +20,7 @@ session_start();
 <table width="600" border="0">
   <tr>
     <th scope="col">Objeto Base</th>
-<?
+<?php
 for($i = 1; $i <= $_SESSION["cantidad_rasgos"]; $i++)
 		{	
 		echo "<th scope=\"col\">Rasgo: ".$_SESSION["rasgos"]["$i"]["nombre"]."</th>";
@@ -47,7 +47,7 @@ for($i = 1; $i <= $_SESSION["cantidad_rasgos"]; $i++)
 <table width="600" border="0">
   <tr>
     <th scope="col">Objeto a Comparar</th>
-<?
+<?php
 for($i = 1; $i <= $_SESSION["cantidad_rasgos"]; $i++)
 		{	
 		echo "<th scope=\"col\">Rasgo: ".$_SESSION["rasgos"]["$i"]["nombre"]."</th>";

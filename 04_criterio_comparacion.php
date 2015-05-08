@@ -1,4 +1,4 @@
-<?
+<?php
 //iniciamos sessiones
 session_start();
 
@@ -63,7 +63,7 @@ for($i = 1; $i <= $_SESSION["cantidad_rasgos"]; $i++)
     <th scope="col">Criterio Comparacion</th>
   </tr>
   
-<?
+<?php
 
 	
 if (isset($_SESSION["cantidad_rasgos"]))

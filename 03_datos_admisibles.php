@@ -1,4 +1,4 @@
-<?
+<?php
 //iniciamos sessiones
 session_start();
 
@@ -35,7 +35,7 @@ for($i = 1; $i <= $_SESSION["cantidad_rasgos"]; $i++)
     <th scope="col">Valores Admisibles</th>
     <th scope="col">Conjunto de Pertenencia</th>
   </tr>
-<?
+<?php
 
 	
 if (isset($_SESSION["cantidad_rasgos"]))

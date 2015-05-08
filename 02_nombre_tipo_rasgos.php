@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 
 //cambiamos la cadena a entero
@@ -29,32 +29,32 @@ $_SESSION["cantidad_rasgos"] = $_POST['no_rasgos'];
     <th scope="col">Cantidad de Rasgos</th>
     <th scope="col">Tipo de Dato</th>
   </tr>
-<?
+<?php
 if (isset($_SESSION["cantidad_rasgos"]))
 	{ 
 	for($i = 1; $i <= $_SESSION["cantidad_rasgos"]; $i++)
 		{		
-  			echo "<tr>\n";
-  			echo "<th scope=\"row\"> $i </th>\n";
-    		echo "<td>\n";
-    		echo "<input type=\"text\" name=\"nombre_rasgo_$i\"/>\n";
-			echo "</td>\n";
-    		echo "<td>\n";
-    		echo "<input type=\"text\" name=\"cantidad_dato_rasgo_$i\"/>\n";
-			echo "</td>\n";
-    		echo "<td>\n";
-      		echo "<select size=\"1\" name=\"tipo_dato_rasgo_$i\">\n";
-        	echo "<option value=\"Booleano\">Booleano</option>\n";
-        	echo "<option value=\"Kvalente\">K-valente</option>\n";
-        	echo "<option value=\"Real\">Real</option>\n";
-    		echo "</select></td></tr>\n";
+  			echo "<tr>";
+  			echo "<th scope=\"row\">$i </th>";
+    		echo "<td>";
+    		echo "<input type=\"text\" name=\"nombre_rasgo_$i\"/>";
+			echo "</td>";
+    		echo "<td>";
+    		echo "<input type=\"text\" name=\"cantidad_dato_rasgo_$i\"/>";
+			echo "</td>";
+    		echo "<td>";
+      		echo "<select size=\"1\" name=\"tipo_dato_rasgo_$i\">";
+        	echo "<option value=\"Booleano\">Booleano</option>";
+        	echo "<option value=\"Kvalente\">K-valente</option>";
+        	echo "<option value=\"Real\">Real</option>";
+    		echo "</select></td></tr>";
 		}
 	}
 
 ?>
 </table>
 </fieldset>
-<? //var_dump	($_SESSION["cantidad_rasgos"]); ?>
+<?phpphp //var_dump	($_SESSION["cantidad_rasgos"]); ?>
 <fieldset class="action">
     	<input type="submit" name="submit" id="submit" value="Siguiente >>" />
    </fieldset></form>
