@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+<body>
+<h2>Hola mundo</h2>
+<button id="btn_add-rasgo">Agregar rasgo</button>
+
+<div id="rasgo">
+    <form>
+        <label for="newObjeto">Nombre del Objeto:</label>
+        <input type="text" id="newObjeto">
+        <br>
+        <label for="newRasgo">Nombre del Rasgo:</label>
+        <input type="text" id="newRasgo">
+        <br>
+        <label for="typeRasgo">Tipo de dato del rasgo:</label>
+        <select id="typeRasgo" name="typeRasgo">
+            <option value="Booleano">Booleano</option>
+            <option value="Kvalente">K-valente</option>
+            <option value="Real">Real</option>
+        </select>
+<hr>
+        <input type="text" placeholder="Valor del Kabalente">
+        <input type="text" placeholder="Conjunto de pertenencia">
+        <button>Agregar otro valor admisible</button>
+        <hr>
+        <input type="text" placeholder="Valor del Bolean 1">
+        <input type="text" placeholder="Valor del Bolean 2">
+        <input type="text" placeholder="Conjunto de pertenencia">
+        <button>Agregar otro valor admisible Boleano</button>
+        <hr>
+        <input type="checkbox">
+        <input type="text" placeholder="Valor Real inicio">
+        <input type="text" placeholder="Valor Real Fin">
+        <input type="checkbox">
+        <input type="text" placeholder="Conjunto de pertenencia">
+        <button>Agregar otro valor admisible Boleano</button>
+    </form>
+
+</div>
+
+<div id="results">
+
+</div>
+
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        var rasgo = '<label for="newRasgo">Nombre del Rasgo:</label>' +
+                '<input type="text" id="newRasgo">' +
+                '';
+
+        $("#btn_add-rasgo").on("click", function () {
+            $("#rasgo").append(rasgo);
+        });
+    });
+</script>
+</body>
+</html>
